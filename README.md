@@ -6,7 +6,7 @@ This pd patch generates customizable visualizations which are no more than a bat
 Much like a fan blade stops when hit with a strobe light spawnpoints are stopped, and a new shape is born from the cubes. 
 Possibly even 9 tails.
 
-It's vanilla and gem, so hopefully that makes setup a more universal.
+It's vanilla and gem, so hopefully that makes setup more universal.
 
 # Controls
 

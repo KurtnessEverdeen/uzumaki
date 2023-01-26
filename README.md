@@ -4,7 +4,6 @@ Or simply "a spiral" I do not watch naruto.
 
 This pd patch generates customizable visualizations which are no more than a battle between oscillator and samplerate.
 Much like a fan blade stops when hit with a strobe light spawnpoints are stopped, and a new shape is born from the cubes. 
-Possibly even 9 tails.
 
 It's vanilla and gem, so hopefully that makes setup more universal.
 
@@ -15,9 +14,9 @@ It's vanilla and gem, so hopefully that makes setup more universal.
 - grav pos/pow: allows for a point at which the cubes fall towards, and how hard
 - paritcle speed: rate at which it all moves
 - particle size: bigggg small
-- outer radius: the amplitude, or in this case radius
+- outer radius: increase radius/size of oscillations
 - snapshot delay: this breaks up when the oscillators are sampled- drawing lines between points
-- age depth: cubes have life spans, and they grow or shrink based on their time in this relm
+- age depth: cubes have life spans, and they grow or shrink based on their time in this realm
 - max age: their time till they die
 - fade point: cubes are only visible 100% at this percentage point in their life, they fade in and out on either side
 - fill thresh: at some point they may change from wireframes to fully drawn (though maybe transparant)

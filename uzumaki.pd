@@ -1,4 +1,4 @@
-#N canvas 960 0 952 1152 16;
+#N canvas 959 0 952 1110 16;
 #N canvas 960 0 952 1110 state_machine 0;
 #X obj 45 146 inlet;
 #X obj 45 179 list trim;
@@ -60,7 +60,7 @@
 #X obj 874 748 r \$0-savebanger;
 #X obj 875 838 array get state_replay;
 #X obj 297 845 vsl 50 128 10 10000 0 0 empty empty Transition_speed
-0 -9 0 10 -203904 -1 -1 2130 1;
+0 -9 0 10 -203904 -1 -1 12700 1;
 #X obj 262 982 s \$0-trans_speed;
 #X obj 104 827 bng 68 250 50 0 empty empty SAVE 17 7 0 45 -45076 -1
 -262130;
@@ -542,7 +542,7 @@ f, f 137;
 #X obj 185 180 t b f;
 #X obj 246 180 t b f;
 #X obj 408 193 r \$0-seq_length;
-#X obj 263 300 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 263 300 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 144 302 spigot;
 #X obj 145 344 spigot;
@@ -568,7 +568,7 @@ f, f 137;
 #X obj 687 184 t b f;
 #X obj 748 184 t b f;
 #X obj 910 197 r \$0-seq_length;
-#X obj 765 304 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 765 304 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 646 306 spigot;
 #X obj 647 348 spigot;
@@ -613,7 +613,7 @@ f, f 137;
 #X obj 1233 198 t b f;
 #X obj 1395 211 r \$0-seq_length;
 #X obj 1250 318 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 1131 320 spigot;
 #X obj 1132 362 spigot;
 #X obj 1207 364 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
@@ -632,7 +632,7 @@ f, f 137;
 #X obj 1735 202 t b f;
 #X obj 1897 215 r \$0-seq_length;
 #X obj 1752 322 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 1633 324 spigot;
 #X obj 1634 366 spigot;
 #X obj 1709 368 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
@@ -676,7 +676,7 @@ f, f 137;
 #X obj 182 750 t b f;
 #X obj 243 750 t b f;
 #X obj 405 763 r \$0-seq_length;
-#X obj 260 870 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 260 870 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 141 872 spigot;
 #X obj 142 914 spigot;
@@ -1730,7 +1730,7 @@ time \, and linger time all by filename;
 #X obj 54 269 unpack f f f;
 #X obj 291 133 r \$0-seq_length;
 #X obj 133 173 expr ($f1+1) > $f2;
-#X obj 105 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 105 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 346 165 5 0 0 0 - - -;
 #X obj 104 204 sel 0 1;
@@ -1773,7 +1773,7 @@ time \, and linger time all by filename;
 #X msg 54 57 1;
 #X obj 291 133 r \$0-seq_length;
 #X obj 133 173 expr ($f1+1) > $f2;
-#X obj 105 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 105 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 346 165 5 0 0 0 - - -;
 #X obj 104 204 sel 0 1;
@@ -1809,7 +1809,7 @@ time \, and linger time all by filename;
 #X msg 53 56 2;
 #X obj 291 133 r \$0-seq_length;
 #X obj 133 173 expr ($f1+1) > $f2;
-#X obj 105 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 105 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 346 165 5 0 0 0 - - -;
 #X obj 104 204 sel 0 1;
@@ -1845,7 +1845,7 @@ time \, and linger time all by filename;
 #X msg 52 59 3;
 #X obj 291 133 r \$0-seq_length;
 #X obj 133 173 expr ($f1+1) > $f2;
-#X obj 105 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 105 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 346 165 5 0 0 0 - - -;
 #X obj 104 204 sel 0 1;
@@ -1881,7 +1881,7 @@ time \, and linger time all by filename;
 #X msg 53 57 4;
 #X obj 291 133 r \$0-seq_length;
 #X obj 133 173 expr ($f1+1) > $f2;
-#X obj 105 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 105 174 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 346 165 5 0 0 0 - - -;
 #X obj 104 204 sel 0 1;
@@ -3065,7 +3065,7 @@ time \, and linger time all by filename;
 #X msg 697 912 draw fill;
 #X obj 952 722 * 360;
 #X msg 728 880 draw line;
-#X obj 674 854 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 674 854 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 695 849 sel 0 1;
 #X floatatom 767 821 5 0 0 0 - - -;
@@ -3473,51 +3473,43 @@ $f2)/$f2;
 #X obj 834 844 r sys_overload;
 #X obj 834 879 change;
 #N canvas 0 0 952 1110 overload_detection 0;
-#X obj 527 132 inlet;
-#X obj 527 206 realtime;
-#X obj 527 177 t b b;
-#X floatatom 527 235 5 0 0 0 - - -;
-#X obj 526 298 f;
-#X obj 527 264 t b f;
-#X obj 526 331 >;
-#X floatatom 525 373 5 0 0 0 - - -;
-#X obj 576 330 spigot;
-#X msg 591 376 0;
-#X text 204 233 use this to measure system load;
-#X obj 380 387 /;
-#X obj 381 324 t b f;
-#X msg 380 355 1000;
-#X floatatom 381 419 5 0 0 0 - - -;
-#X text 279 420 framerate;
-#X obj 268 680 s sys_overload;
-#X obj 489 474 tgl 150 0 empty empty LAG_OUT!!! -17 -14 0 25 -258113
+#X obj 448 100 inlet;
+#X obj 448 162 realtime;
+#X obj 448 133 t b b;
+#X floatatom 448 191 5 0 0 0 - - -;
+#X obj 447 254 f;
+#X obj 448 220 t b f;
+#X obj 447 287 >;
+#X floatatom 446 329 5 0 0 0 - - -;
+#X obj 497 286 spigot;
+#X msg 512 332 0;
+#X text 125 189 use this to measure system load;
+#X obj 382 337 /;
+#X obj 383 274 t b f;
+#X msg 382 305 1000;
+#X floatatom 383 369 5 0 0 0 - - -;
+#X text 281 370 framerate;
+#X obj 375 864 s sys_overload;
+#X obj 202 428 tgl 150 0 empty empty LAG_OUT!!! -17 -14 0 25 -258113
 -86277 -86277 0 1;
-#X obj 416 495 != 1;
-#X obj 91 560 print overload \, FR:;
-#X obj 230 526 spigot;
-#X obj 266 654 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 216 363 != 1;
+#X obj 145 642 print overload \, FR:;
+#X obj 145 611 spigot;
+#X obj 382 452 > 8;
+#X obj 458 399 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 330 608 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X floatatom 518 758 20 0 0 0 - - -;
-#X obj 424 727 del;
-#X msg 447 668 stop;
-#X obj 377 502 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 386 538 change;
-#X obj 258 603 spigot;
-#X msg 406 612 0;
-#X msg 395 766 1;
-#X obj 573 640 loadbang;
-#X obj 506 853 line;
-#X floatatom 502 894 15 0 0 0 - - -;
-#X msg 439 766 bang;
-#X obj 636 710 f;
-#X obj 387 578 t b b b b;
-#X msg 577 672 1500;
-#X obj 683 712 * 1.5;
-#X obj 385 807 pack 1500 f;
-#X obj 379 457 > 8;
+#X obj 458 370 loadbang;
+#X obj 457 455 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 382 415 f;
+#X obj 375 831 spigot;
+#X obj 432 783 tgl 35 0 empty empty empty 17 7 0 35 -1 -191407 -191407
+1 1;
+#X obj 395 485 sel 0;
+#X obj 408 516 timer;
+#X floatatom 410 549 10 0 0 0 - - -;
+#X obj 458 425 metro 200;
+#X obj 432 609 > 7000;
 #X connect 0 0 2 0;
 #X connect 1 0 3 0;
 #X connect 2 0 1 0;
@@ -3537,41 +3529,25 @@ $f2)/$f2;
 #X connect 12 1 11 1;
 #X connect 13 0 11 0;
 #X connect 14 0 20 0;
-#X connect 14 0 40 0;
+#X connect 14 0 25 1;
 #X connect 17 0 20 1;
 #X connect 18 0 17 0;
 #X connect 20 0 19 0;
-#X connect 21 0 16 0;
-#X connect 22 0 28 1;
-#X connect 23 0 24 1;
-#X connect 23 0 32 0;
-#X connect 23 0 39 1;
-#X connect 24 0 30 0;
-#X connect 24 0 34 0;
-#X connect 25 0 24 0;
-#X connect 26 0 27 0;
-#X connect 26 0 28 0;
-#X connect 27 0 36 0;
-#X connect 28 0 21 0;
-#X connect 29 0 22 0;
-#X connect 29 0 21 0;
-#X connect 30 0 22 0;
-#X connect 31 0 37 0;
-#X connect 32 0 33 0;
-#X connect 33 0 35 1;
-#X connect 34 0 39 0;
-#X connect 35 0 23 0;
-#X connect 35 0 38 0;
-#X connect 36 0 24 0;
-#X connect 36 1 29 0;
-#X connect 36 2 25 0;
-#X connect 36 3 35 0;
-#X connect 37 0 23 0;
-#X connect 37 0 35 1;
-#X connect 38 0 35 1;
-#X connect 39 0 32 0;
-#X connect 40 0 18 0;
-#X connect 40 0 26 0;
+#X connect 21 0 18 0;
+#X connect 21 0 26 0;
+#X connect 21 0 28 0;
+#X connect 22 0 31 0;
+#X connect 23 0 22 0;
+#X connect 24 0 25 0;
+#X connect 24 0 29 1;
+#X connect 25 0 21 0;
+#X connect 26 0 16 0;
+#X connect 27 0 26 1;
+#X connect 28 0 29 0;
+#X connect 29 0 30 0;
+#X connect 30 0 32 0;
+#X connect 31 0 24 0;
+#X connect 32 0 27 0;
 #X restore 566 280 pd overload_detection;
 #X text 1217 851 add all size modifiers;
 #X text 671 936 draw what type? line v fill;
@@ -3776,8 +3752,8 @@ is too low \, waits and trys them again later..., f 21;
 #X text 689 1007 camera jitter?;
 #X obj -375 -305 cnv 15 855 1050 empty empty empty 20 12 0 14 -204800
 -258113 0;
-#X obj -191 589 cnv 15 150 150 empty \$0-control_color \ 55 -45 77
-0 100 -2334 -196664 0;
+#X obj -191 589 cnv 15 150 150 empty \$0-control_color \ 66 -45 77
+0 100 -262144 -259574 0;
 #N canvas 0 0 952 1152 catch_state 0;
 #X obj 769 19 r from_state;
 #X obj 769 48 list trim;
@@ -4065,50 +4041,50 @@ is too low \, waits and trys them again later..., f 21;
 #X obj -82 -50 vsl 50 150 1 1000 0 0 snapshot \$0-snapshot Snapshot_delay
 0 -9 0 10 -254453 -1 -1 0 1;
 #X obj -217 -271 vsl 50 150 0 1000 0 0 x_freq \$0-x_freq X_freq 0 -9
-0 10 -1 -262144 -262144 3354 1;
+0 10 -1 -262144 -262144 7600 1;
 #X obj -147 -272 vsl 50 150 0 1000 0 0 y_freq \$0-y_freq Y_Freq 5 -10
-0 10 -1 -262144 -262144 3354 1;
+0 10 -1 -262144 -262144 7600 1;
 #X floatatom 138 -109 5 0 0 0 - - -;
 #X floatatom 201 -108 5 0 0 0 - - -;
 #X floatatom -217 -111 5 0 0 0 - - -;
 #X floatatom -82 107 5 0 0 0 - - -;
 #X floatatom -147 -108 5 0 0 0 - - -;
 #X obj -317 -51 vsl 50 150 0.05 10 0 0 part_speed \$0-part_speed Particle_speed
--20 -10 0 10 -159808 -1 -1 1400 1;
+-20 -10 0 10 -159808 -1 -1 900 1;
 #X floatatom -316 109 5 0 0 0 - - -;
 #X obj 231 -49 vsl 50 150 0 1.01 0 0 fill_thres \$0-fill_thres Fill_thresh
-5 -10 0 10 -73454 -1 -1 3100 1;
+5 -10 0 10 -73454 -1 -1 0 1;
 #X floatatom 231 108 5 0 0 0 - - -;
 #X obj 82 -50 vsl 50 150 1 700 0 0 max_age \$0-max_age MAX_age 5 -10
-0 10 -134204 -1 -1 6000 1;
+0 10 -134204 -1 -1 6400 1;
 #X floatatom 82 107 5 0 0 0 - - -;
 #X floatatom -161 108 5 0 0 0 - - -;
 #X obj 311 -46 vsl 50 150 -2 2 0 0 pulse_size \$0-pulse_size Pulse_Size
 0 -10 0 10 -4160 -261234 -159808 7450 1;
 #X floatatom 311 111 5 0 0 0 - - -;
 #X obj -159 -49 vsl 50 150 0.1 55 0 0 outer_r \$0-outer_r outer_Radius
-0 -10 0 10 -202688 -262144 -45076 1600 1;
+0 -10 0 10 -202688 -262144 -45076 500 1;
 #X obj 389 -45 vsl 50 150 100 100000 0 0 pulse_depth \$0-pulse_depth
-pulse_depth -4 -10 0 10 -204800 -1 -4160 2 1;
+pulse_depth -4 -10 0 10 -204800 -1 -4160 786 1;
 #X floatatom 389 112 6 0 0 0 - - -;
 #X obj -331 193 vsl 40 150 0 1 0 0 empty \$0-r RED 20 -10 1 10 -258113
--1 -1 0 1;
+-1 -1 14900 1;
 #X obj -272 192 vsl 40 150 0 1 0 0 empty \$0-g GREEN 5 -10 0 10 -4034
--1 -1 8600 1;
+-1 -1 14900 1;
 #X obj -221 191 vsl 40 150 0 1 0 0 empty \$0-b BLUE 5 -10 0 10 -4160
--1 -1 6900 1;
+-1 -1 14900 1;
 #X obj 155 -49 vsl 50 150 0 1 0 0 fadepoint \$0-fadepoint Fade_Point
-0 -9 0 10 -89071 -1 -1 4200 1;
+0 -9 0 10 -89071 -1 -1 2600 1;
 #X floatatom 155 108 5 0 0 0 - - -;
 #X obj -238 -51 vsl 50 150 -10 15 0 0 particle_size \$0-particle_size
-particle_size -10 -10 0 10 -193984 -262144 -13330 6000 0;
+particle_size -10 -10 0 10 -193984 -262144 -13330 6002 0;
 #X floatatom 8 108 5 0 0 0 - - -;
 #X obj 8 -49 vsl 50 150 -6 6 0 0 age_depth \$0-age_depth age_depth
-0 -10 0 10 -3071 -261234 -13330 5300 1;
+0 -10 0 10 -3071 -261234 -13330 7227 1;
 #X obj 139 -270 vsl 50 150 0 1 0 0 x_phase \$0-x_phase X_Phase 0 -9
-0 10 -228856 -1 -1 3725 1;
+0 10 -228856 -1 -1 12000 1;
 #X obj 201 -269 vsl 50 150 0 1 0 0 y_phase \$0-y_phase Y_Phase 0 -9
-0 10 -228856 -1 -1 0 1;
+0 10 -228856 -1 -1 8300 1;
 #X floatatom -276 354 5 0 0 0 - - -;
 #X floatatom -332 354 5 0 0 0 - - -;
 #X floatatom -220 353 5 0 0 0 - - -;
@@ -4213,11 +4189,11 @@ particle_size -10 -10 0 10 -193984 -262144 -13330 6000 0;
 #X connect 40 0 32 0;
 #X restore -282 390 pd colorstuff;
 #X obj -156 191 vsl 30 150 -1 1 0 0 empty \$0-rx Red_x 5 -10 0 10 -260779
--1 -1 13100 1;
+-1 -1 11200 1;
 #X obj -101 191 vsl 30 150 -1 1 0 0 empty \$0-gx Green_x 2 -10 0 10
--172011 -1 -1 0 1;
+-172011 -1 -1 2700 1;
 #X obj -34 191 vsl 30 150 -1 1 0 0 empty \$0-bx Blue_x 2 -10 0 10 -124800
--1 -1 10500 1;
+-1 -1 6300 1;
 #X floatatom -101 354 5 0 0 0 - - -;
 #X floatatom -157 354 5 0 0 0 - - -;
 #X floatatom -45 355 5 0 0 0 - - -;
@@ -4241,10 +4217,10 @@ particle_size -10 -10 0 10 -193984 -262144 -13330 6000 0;
 #X obj -309 880 tgl 25 0 mutator empty RANDOMIZE_STATE 17 7 0 16 -258113
 -1 -260097 0 1;
 #X obj 82 529 vsl 75 180 1000 100000 0 0 linger_time \$0-linger_time
-Linger? 0 -9 0 10 -204800 -1 -1 1000 1;
+Linger? 0 -9 0 10 -204800 -1 -1 15730 1;
 #X floatatom 82 718 6 0 0 0 - - -;
 #X obj -14 528 vsl 75 180 10 100000 0 0 trans_speed \$0-trans_speed
-Trans_speed 0 -9 0 10 -203904 -1 -1 300 1;
+Trans_speed 0 -9 0 10 -203904 -1 -1 8054 1;
 #X floatatom -14 718 6 0 0 0 - - -;
 #X text -259 546 saves to end unless DUB V, f 6;
 #X obj 714 317 s \$0-grav_pos;
@@ -4254,9 +4230,9 @@ Trans_speed 0 -9 0 10 -203904 -1 -1 300 1;
 #X obj 380 -262 bng 25 250 50 0 \$0-zero_grav2 empty 0_GRAV_POW 17
 7 0 10 -204800 -258113 -258113;
 #X obj 261 -267 vsl 45 150 -0.5 0.5 0 0 grav_pwr \$0-grav_pwr 2Grave_Pwr
-0 -9 0 10 -4032 -260097 -2212 7000 1;
+0 -9 0 10 -4032 -260097 -2212 7100 1;
 #X obj 326 -268 vsl 45 150 -12 12 0 0 grav_pos \$0-grav_pos Grav2_Pos
-0 -9 0 10 -262130 -159808 -159808 7450 1;
+0 -9 0 10 -262130 -159808 -159808 5900 1;
 #X floatatom 261 -108 5 0 0 0 - - -;
 #X floatatom 327 -108 5 0 0 0 - - -;
 #X obj -293 -280 bng 45 250 50 0 \$0-c_window empty C_WINDOW 5 7 0
@@ -4429,60 +4405,6 @@ time are also recorded, f 16;
 0 15 -45076 -262144 -262144;
 #X text 566 561 >>>>>>>>>THIS>;
 #X msg -80 529 62, f 4;
-#N canvas 853 262 782 630 tv_feedback 0;
-#X obj 423 192 gemhead;
-#X obj 426 251 gemframebuffer;
-#X obj 374 445 colorRGB;
-#X floatatom 537 409 5 0 0 0 - - -;
-#X obj 327 315 translateXYZ 0 0 -3;
-#X obj 371 563 square;
-#X obj 622 350 pix_texture;
-#X obj 622 414 square;
-#X floatatom 718 398 5 0 0 0 - - -;
-#X obj 420 133 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 599 152 gemhead;
-#X obj 578 98 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 465 34 loadbang;
-#X msg 476 69 0;
-#X floatatom 419 390 5 0 0 0 - - -;
-#X obj 373 508 alpha;
-#X floatatom 473 483 5 0 0 0 - - -;
-#X msg 549 370 1;
-#X obj 623 233 pix_video;
-#X msg 647 62 dimen 640 480;
-#X floatatom 553 295 5 0 0 0 - - -;
-#X floatatom 489 537 5 0 0 0 - - -;
-#X msg 565 516 11;
-#X msg 669 191 device 1;
-#X connect 0 0 1 0;
-#X connect 1 0 4 0;
-#X connect 1 1 6 1;
-#X connect 2 0 15 0;
-#X connect 3 0 2 4;
-#X connect 4 0 2 0;
-#X connect 6 0 7 0;
-#X connect 8 0 7 1;
-#X connect 9 0 0 0;
-#X connect 10 0 18 0;
-#X connect 11 0 10 0;
-#X connect 12 0 13 0;
-#X connect 13 0 9 0;
-#X connect 13 0 11 0;
-#X connect 14 0 2 3;
-#X connect 14 0 2 2;
-#X connect 14 0 2 1;
-#X connect 15 0 5 0;
-#X connect 16 0 15 1;
-#X connect 17 0 3 0;
-#X connect 18 0 6 0;
-#X connect 19 0 18 0;
-#X connect 20 0 4 3;
-#X connect 21 0 5 1;
-#X connect 22 0 21 0;
-#X connect 23 0 18 0;
-#X restore -207 1063 pd tv_feedback;
 #X connect 1 0 0 0;
 #X connect 6 0 5 0;
 #X connect 7 0 5 1;

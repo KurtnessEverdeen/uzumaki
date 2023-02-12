@@ -1,13 +1,11 @@
 #N canvas 0 0 952 1110 16;
 #X obj 357 354 line;
-#X obj 327 80 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 327 80 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 329 98 metro 5000;
 #X obj 327 40 loadbang;
-#X obj 329 136 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
+#X obj 329 136 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 335 160 sel 0 1;
-#X floatatom 355 413 5 0 0 0 - - -;
+#X floatatom 355 413 5 0 0 0 - - - 0;
 #X obj 181 118 inlet;
 #X obj 181 147 / 2;
 #X obj 178 200 s \$0-ptime;
@@ -24,10 +22,11 @@
 #X obj 467 158 !=;
 #X obj 463 77 t f b;
 #X msg 253 360 stop;
-#X obj 312 310 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
+#X obj 312 310 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 267 279 != 1;
 #X obj 254 330 spigot;
+#X text 349 7 2nd inlet for off/on bang;
+#X text 85 91 first inlet for range;
 #X connect 0 0 6 0;
 #X connect 1 0 2 0;
 #X connect 1 0 24 0;

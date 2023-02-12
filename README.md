@@ -1,6 +1,6 @@
 # uzumaki
 ![Defined as:](https://filmschoolrejects.com/wp-content/uploads/2019/09/B933157C-8327-4109-9F1A-69A6880A1D3E.jpeg)
-Or simply "a spiral" I do not watch naruto.
+Or simply "a spiral"
 
 This pd patch generates customizable visualizations which are no more than a battle between oscillator and samplerate.
 Much like a fan blade stops when hit with a strobe light spawnpoints are stopped, and a new shape is born from the cubes. 
